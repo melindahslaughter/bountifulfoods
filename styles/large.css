@@ -1,0 +1,76 @@
+ @media only screen and (min-width: 64rem) {
+ 
+ /*Navigation style */
+    nav button {
+    display: none;
+  }
+  nav ul#primaryNav {
+    display: flex;
+    justify-content: flex-end; 
+    padding-inline-start: 0px;
+  }
+
+  nav ul li a {
+    padding: 0.5rem 1rem;
+  }
+.index {
+  display:flex;
+  flex-wrap: wrap;
+}
+.fresh {
+  display: flex;
+  justify-content:space-around ;
+}
+  .fruitcontainer {
+    display: block;
+  }
+  .vegcontainer,
+.fruitcontainer, .cabcontainer{
+  border:solid 2px rgb(255,221,69);  
+  max-width:auto;  
+  margin-left: 1.5rem;
+  margin-top: .5rem;
+  padding: .5rem;
+ align-content:center; 
+}
+/* .orderinfo {
+  margin-top: 5px;
+} */
+.forecastcontainer {
+  display:flex;
+  flex-direction: row;
+   border: solid 2px rgb(18,130,83);
+    border-radius: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 30px;
+    margin-right: 15px;
+
+}
+ .about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem; 
+ }
+  .abouth1{
+  grid-column: 1/3;
+  text-align: center;
+ }
+ .historicalinfo {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  width: 80%; 
+  height: 92%
+ }
+ .contactinfo {
+  grid-column: 1/2;
+  grid-row: 3/4; 
+  margin-left: 25px;
+  width: 60%;
+ }
+ .map {
+  grid-column: 1/3;
+  grid-row: 2/3;
+  width: 60%;
+ }
+}

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Melinda Slaughter">
+    <meta name="description"
+        content="site for fictitional company Bountiful Foods. Created as a final project for WDD230 BYUI">
+    <title>Bountiful Foods</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+</head>
+
+<body class="indexbody">
+    <header>
+        <div class="headercontainer">
+              <picture>
+        <source srcset="images/smoothie500.jpg" media="(max-width: 500px)">
+        <source srcset="images/smoothie800.jpg" media="(max-width: 800px)">
+        <img class="mainimg" src="images/smoothie1200.jpg" alt="Image of smoothies" sizes="100vw">
+      </picture>
+       
+            
+            <h1 class="headerh1">Bountiful Foods</h1>
+        </div>
+        <div class="navcontainer">
+        <nav>
+            <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+            <ul id="primaryNav"> 
+                <li><a class="current" href="index.html">Home</a></li>
+                <li><a href="fresh.html">Fresh</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+        </nav>
+        </div>
+
+        <div class="date"></div>
+    </header>
+
+    <main class="index">
+        <!-- <div class="uppercontainer"> -->
+        <div class="fruitcontainer">
+            <h2 class="fruith2">San Diego</h2>
+            <picture class="fruitimg">
+                <img src="https://via.placeholder.com/350x233" data-src="images/fruit.jpg" alt="Image of fruit">
+            </picture>
+            <p>
+                Eu laborum magna amet aliqua eu reprehend <br>
+                aliqua et nisi enim pariatur deserunt. Sit <br>
+                incididunt pariatur est officia qui tempor <br>
+                fugiat occaecat nisi culpa cupidatat duis <br>
+                qui.Id tempor consequat labore ea ea tempor<br>
+                aliqua quis qui minim excepteur. Laboris d<br>
+                consectetur magna elit aliqua reprehenderit <br>
+                consectetur. Sit elit id Lorem sint aute la<br>
+                Laboris reprehenderit dolor laboris duis inc<br>
+                Aute aliquip minim amet laborum incididunt c<br>
+                Lorem amet veniam eiusmod amet duis.
+            </p>
+        </div>
+
+        <div class="vegcontainer">
+            <h2 class="fruith2">San Clemente</h2>
+            <picture class="vegimg">
+                <img src="https://via.placeholder.com/350x233" data-src="images/veg.jpg" alt="Image of vegitables" />
+            </picture>
+            <p>
+                Eu laborum magna amet aliqua eu reprehend <br>
+                aliqua et nisi enim pariatur deserunt. Sit <br>
+                incididunt pariatur est officia qui tempor <br>
+                fugiat occaecat nisi culpa cupidatat duis <br>
+                qui.Id tempor consequat labore ea ea tempor<br>
+                aliqua quis qui minim excepteur. Laboris d<br>
+                consectetur magna elit aliqua reprehenderit <br>
+                consectetur. Sit elit id Lorem sint aute la<br>
+                Laboris reprehenderit dolor laboris duis inc<br>
+                Aute aliquip minim amet laborum incididunt c<br>
+                Lorem amet veniam eiusmod amet duis.
+            </p>
+        </div>
+
+        <div class="cabcontainer">
+            <h2 class="fruith2">Encinitas</h2>
+            <picture class="vegimg">
+                <img src="https://via.placeholder.com/350x233" data-src="images/cabbage.jpg" alt="Image of cabbage" />
+            </picture>
+            <p>
+                Eu laborum magna amet aliqua eu reprehend <br>
+                aliqua et nisi enim pariatur deserunt. Sit <br>
+                incididunt pariatur est officia qui tempor <br>
+                fugiat occaecat nisi culpa cupidatat duis <br>
+                qui.Id tempor consequat labore ea ea tempor<br>
+                aliqua quis qui minim excepteur. Laboris d<br>
+                consectetur magna elit aliqua reprehenderit <br>
+                consectetur. Sit elit id Lorem sint aute la<br>
+                Laboris reprehenderit dolor laboris duis inc<br>
+                Aute aliquip minim amet laborum incididunt c<br>
+                Lorem amet veniam eiusmod amet duis.
+            </p>
+        </div>
+        <!-- </div> -->
+
+        <section class="weather">
+            <div class="weatherdiv">
+                <h3 class="weatherp">Weather</h3>
+                <figure>
+                    <img class="weatherimg" src="#" alt="#" id="weather-icon">
+                    <figcaption></figcaption>
+                </figure>
+            </div>
+
+            <p class="temptxt">Temperature: <span id="tempInput"></span> &deg;F</p>
+            <span> Humidity: </span><span id="humidity"></span> <span>%</span>
+
+            <div class="temp"></div>
+        </section>
+        <div class="forecastcontainer">
+        <div class="forecastinfo">
+            <div>
+                <span class="forecast"></span><br>
+                <div class="f1">
+                    <span> Date/time: <br> </span>
+                </div>
+                <span id="day"></span><br>
+                <div class="f2">
+                    <span>Temperature: </span><span id="tempShown"></span><span> &deg;F</span>
+                </div>
+            </div>
+        </div>
+        <div class="forecastinfo">
+            <div>
+                <span class="forecast2"></span><br>
+                <div class="f1">
+                    <span>Date/time: <br> </span>
+                </div>
+                <span id="day2"></span><br>
+                <div class="f2">
+                    <span>Temperature: </span><span id="tempShown2"></span><span> &deg;F</span>
+                </div>
+            </div>
+        </div>
+        <div class="forecastinfo3">
+            <div>
+                <span class="forecast3"></span><br>
+                <div class="f1">
+                    <span>Date/time: <br> </span>
+                </div>
+                <span id="day3"></span><br>
+                <div class="f2">
+                    <span>Temperature: </span><span id="tempShown3"></span><span> &deg;F</span>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="smoothie">
+        <h2>Make a Smoothie here!</h2>
+        <p>Try one of our delicious smoothies made<br>
+        with fresh organic produce. Only $5.99!</p>
+        <button class="freshbutton" onclick="window.location.href='fresh.html';">
+      Make now!
+    </button>
+</div>
+    </main>
+    <footer class="footer">
+        <div class="media">
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="images/facebook.png" alt="facebook logo" width="30">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="images/instagram.png" alt="instagram logo" width="30">
+            </a>
+            <a href="https://twitter.com/?lang=en" target="_blank">
+                <img src="images/twitter.png" alt="twitter logo" width="30">
+            </a>
+            <a href="https://www.tiktok.com/en/" target="_blank">
+                <img src="images/tiktok.png" alt="tiktok logo" width="30">
+            </a>
+        </div>
+       <div class="contactfooter">
+        <p><strong>Contact Information</strong></p>
+         <p>2030 Culiver Street</p>
+            <p>Carlsbad California, 92008</p>
+            <p>bountifulfoods@gmail.com</p>
+            <p>555-867-5309</p>
+             </div>
+             <div>
+        <span id="lastModified"></span><br>
+         <span>Weather data provided by: <a class="weath" href="https://openweathermap.org/">OpenWeatherMap.org</a></span>
+       </div>
+    </footer>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/images.js"></script>
+    <script src="scripts/weather.js"></script>
+    
+</body>
+
+</html>

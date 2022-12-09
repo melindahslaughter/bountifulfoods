@@ -1,0 +1,284 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Header style */
+.headercontainer {
+  position:relative;
+  width: 100%;
+}
+.headerh1 {
+  position:absolute;
+  text-align: center;
+  font-size: 60px;
+  margin:0;
+  bottom: 5px;
+  left: 32%;
+}
+
+/* Navigation style */
+nav button {
+  margin: 0.2rem 2vw;
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  color: rgb(32, 32, 32);
+}
+
+nav {
+  background-color:rgb(232,100,125);
+  width:100%;
+
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li a {
+  display: block;
+  padding: 0.8rem 2vw;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+}
+nav li a.current {
+  background-color: rgb(133, 60, 75);
+  color: white;
+}
+nav ul li a:hover {
+  background-color:rgb(151,65,92);
+}
+
+nav ul {
+  display: none;
+}
+
+nav ul.open {
+  display: block;
+}
+
+#hamburgerBtn span:nth-child(1) {
+  display: block;
+}
+
+#hamburgerBtn span:nth-child(2) {
+  display: none;
+}
+
+#hamburgerBtn.open span:nth-child(1) {
+  display: none;
+}
+
+#hamburgerBtn.open span:nth-child(2) {
+  display: block;
+}
+
+/* Date style */
+.date {
+  font-size: 30px;
+  text-align: center;
+  padding: 1rem;
+}
+
+ .indexbody, .freshbody, .aboutbody {
+ display: grid;
+ grid-template-columns: 1fr;
+ 
+} 
+.index, .fresh, .about {
+  display: grid;
+  column-gap: 1em;
+  width: 100%;
+} 
+
+/*info container style*/
+.vegcontainer,
+.fruitcontainer, .cabcontainer {
+  border:solid 2px rgb(255,221,69);
+  max-width:auto;   
+  margin-left: 1.5rem;
+  margin-top: .5rem;
+  padding: .5rem;
+}
+
+.orderinfo {
+  margin-top: 30px;
+  border: solid 2px  rgb(232,100,125);
+  padding: .5rem;
+}
+
+
+.fruith2, .vegh2, .cabh2 {
+  background-color:rgb(255,221,69);
+ text-align:center;
+ margin:-1px 0 0 0;
+ padding: 1rem;
+}
+.infoh2 {
+  background-color:rgb(232,100,125);
+  color: white;
+  padding: 1rem;
+  margin:-1px 0 0 0;
+}
+.userName {
+  font-size: 1.17em;
+}
+
+/* weather style */
+.weather, .forecastinfo, 
+.forecastinfo3 {
+  border: solid 2px rgb(18,130,83);
+  text-align: center;
+  padding: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  justify-content: center;
+}
+.forecastinfo3 {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+.weather {
+  margin-left: 25px;
+}
+.forecastinfo, .forecastinfo3 {
+  padding-top: 27px;
+  margin-left: 10px;
+}
+.forecastcontainer {
+  display:flex;
+  flex-direction: row;
+   border: solid 2px rgb(18,130,83);
+    border-radius: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 30px;
+    margin-right: 15px;
+}
+ 
+figure {
+  margin:0;
+}
+.temptxt {
+  margin: 2px;
+}
+.f1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.f2 {
+  margin-top: 10px;
+}
+/* smoothie styles*/
+.freshbutton {
+background-color: rgb(232,100,125);
+font-size: 1.5rem;
+color: white;
+padding: 0.75rem 1.5rem;
+margin: 0 0 2rem 1.5rem;
+border: none;
+border-radius: 15px;
+}
+.smoothie {
+  border: solid 2px rgb(232,100,125);
+  border-radius: 15px;
+  text-align: center;
+  padding: 1rem;
+  margin: 15px 9px;
+}
+ /* footer styles*/
+.footer {
+  border-top: solid 2px rgb(151,65,92);
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  padding: 2rem;
+  width: 100%;
+}
+.contactfooter p {
+  margin: 1px;
+}
+
+/* form style */
+form {
+  padding: 0.5rem;
+}
+form fieldset {
+  margin: 2rem 0;
+  border: 1px solid rgb(232,100,125);
+  border-radius: 10px;
+  padding: 0.5rem 2%;
+}
+form legend {
+  color: #00244c;
+  margin: 0 1rem;
+  padding: 0 0.5rem;
+}
+form label.top {
+  display: block;
+  padding-top: 1rem;
+  color:#00244c;
+  font-size: 15px;
+  font-size: 0.8rem;
+}
+form label.top input,
+textarea {
+  display: block;
+  font-size: 1rem;
+  border: solid 1px #00244c;
+  font-size: 0.8rem;
+  border-radius: 4px;
+  padding: 0.75rem;
+  color:  rgb(2, 20, 36);
+  width: 90%;
+  max-width: 20rem;
+  background-color: aliceblue;
+
+}
+.submitBtn {
+  margin-top: 7px;
+}
+.orderinfo {
+  margin-bottom: 37px;
+  margin-top: 45px;
+}
+ /* fresh page style */
+ .about {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem; 
+ }
+
+ .abouth2 {
+  text-align: center;
+ }
+ .historicalinfo {
+  border: solid 2px rgb(18,130,83);
+  margin-left: 1.5rem;
+  margin-top: .5rem;
+  padding: .8rem;
+  align-content: center;
+  width: 80%; 
+ }
+ .historyp {
+  line-height: 1.7rem;
+ }
+ .contactinfo {
+  border: solid 2px rgb(18,130,83);
+  margin-left: 2rem;
+  padding: 1rem;
+  width: 60%;
+  text-align: center;
+}
+.map {
+  margin-top: 7px;
+  margin-left: 25px;
+  width: 60%;
+} 

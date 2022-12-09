@@ -1,0 +1,33 @@
+@media only screen and (min-width: 36em) {
+
+ .index, .fresh{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+} 
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.vegcontainer {
+  grid-column: 1/2;
+}
+.cabcontainer {
+  grid-column: 2/3
+}
+.weather {
+  grid-column: 1/2;
+  grid-row: 2/3;
+
+}
+  nav ul li a {
+    border: none;
+  }
+  .fruitcontainer {
+    display: none;
+  }
+  .forecastcontainer {
+    display: none;
+  }
+
+}
