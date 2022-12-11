@@ -99,6 +99,7 @@ nav ul.open {
   display: grid;
   column-gap: 1em;
   max-width: 100%;
+  margin: 0;
 } 
 
 /*info container style*/
