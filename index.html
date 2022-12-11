@@ -22,8 +22,8 @@
               <picture>
         <source srcset="images/smoothie500.jpg" media="(max-width: 500px)">
         <source srcset="images/smoothie800.jpg" media="(max-width: 800px)">
-        <img class="mainimg" src="images/smoothie1200.jpg" alt="Image of smoothies" sizes="100vw">
-      </picture>
+        <img class="mainimg" src="images/smoothie1200.jpg" alt="Image of smoothies" sizes="(min-width: 800px) ,100vw"><!--chech this-->
+      </picture>                                                                                     <!--was 48em) 80px, 100vw-->
        
             
             <h1 class="headerh1">Bountiful Foods</h1>
@@ -43,25 +43,26 @@
     </header>
 
     <main class="index">
-        <!-- <div class="uppercontainer"> -->
-        <div class="fruitcontainer">
+      <div class="fruitcontainer">
             <h2 class="fruith2">San Diego</h2>
-            <picture class="fruitimg">
+            <picture class="vegimg">
                 <img src="https://via.placeholder.com/350x233" data-src="images/fruit.jpg" alt="Image of fruit">
             </picture>
+            <div class="vegp">
             <p>
-                Eu laborum magna amet aliqua eu reprehend <br>
-                aliqua et nisi enim pariatur deserunt. Sit <br>
-                incididunt pariatur est officia qui tempor <br>
-                fugiat occaecat nisi culpa cupidatat duis <br>
-                qui.Id tempor consequat labore ea ea tempor<br>
-                aliqua quis qui minim excepteur. Laboris d<br>
-                consectetur magna elit aliqua reprehenderit <br>
-                consectetur. Sit elit id Lorem sint aute la<br>
-                Laboris reprehenderit dolor laboris duis inc<br>
-                Aute aliquip minim amet laborum incididunt c<br>
-                Lorem amet veniam eiusmod amet duis.
+                San Diego is located on the Pacific coast of  <br>
+                California. It is known for its beaches, parks <br>
+                and some of the best weather year round in  <br>
+                the United States. Immense Balboa Park is the  <br>
+                famous San Dieg Zoo, as well as many art <br>
+                galleries, museums, art studios and gardens. <br>
+                It is boasts Petco field, home of the San  <br>
+                Diego Padres. San Diego is home to a large <br>
+                Naval fleet, with the museum the USS Midway,<br>
+                a once active air craft carrier that is now <br>
+                a museum open to the public.
             </p>
+            </div>
         </div>
 
         <div class="vegcontainer">
@@ -69,41 +70,44 @@
             <picture class="vegimg">
                 <img src="https://via.placeholder.com/350x233" data-src="images/veg.jpg" alt="Image of vegitables" />
             </picture>
+            <div class="vegp">
             <p>
-                Eu laborum magna amet aliqua eu reprehend <br>
-                aliqua et nisi enim pariatur deserunt. Sit <br>
-                incididunt pariatur est officia qui tempor <br>
-                fugiat occaecat nisi culpa cupidatat duis <br>
-                qui.Id tempor consequat labore ea ea tempor<br>
-                aliqua quis qui minim excepteur. Laboris d<br>
-                consectetur magna elit aliqua reprehenderit <br>
-                consectetur. Sit elit id Lorem sint aute la<br>
-                Laboris reprehenderit dolor laboris duis inc<br>
-                Aute aliquip minim amet laborum incididunt c<br>
-                Lorem amet veniam eiusmod amet duis.
+                San Clemente is locate in Orange County,  <br>
+                California. San Onofre and San Clemente <br>
+                state beaches are located in San Clemente. <br>
+                They are known for their surf breaks and  <br>
+                sandstone bluffs. The Beach Trail is perfect <br>
+                for running along the coast with sea views <br>
+                and green parks. San Clemente Pier located  <br>
+                near T-Street Beach, reaches into the Pacific<br>
+                Ocean. The city's Spanish-style architecture <br>
+                are showcased at the Casa Romantica Cultural <br>
+                Center and Gardens.
             </p>
+            </div>
+            
         </div>
 
         <div class="cabcontainer">
             <h2 class="fruith2">Encinitas</h2>
-            <picture class="vegimg">
-                <img src="https://via.placeholder.com/350x233" data-src="images/cabbage.jpg" alt="Image of cabbage" />
+            <picture>
+                <img class="vegimg" src="https://via.placeholder.com/350x233" data-src="images/cabbage.jpg" alt="Image of cabbage" />
             </picture>
-            <p>
-                Eu laborum magna amet aliqua eu reprehend <br>
-                aliqua et nisi enim pariatur deserunt. Sit <br>
-                incididunt pariatur est officia qui tempor <br>
-                fugiat occaecat nisi culpa cupidatat duis <br>
-                qui.Id tempor consequat labore ea ea tempor<br>
-                aliqua quis qui minim excepteur. Laboris d<br>
-                consectetur magna elit aliqua reprehenderit <br>
-                consectetur. Sit elit id Lorem sint aute la<br>
-                Laboris reprehenderit dolor laboris duis inc<br>
-                Aute aliquip minim amet laborum incididunt c<br>
-                Lorem amet veniam eiusmod amet duis.
+            <p class="vegp">
+                Encinitas is a beach city located in the  <br>
+                North County area of San Diego County,  <br>
+                in Southern California. It is nintey-five  <br>
+                miles south of Los Angeles. It if famous  <br>
+                for some of the most beautiful beaches in <br>
+                California. It has excellent surfing conditions<br>
+                and every year it hosts surfing tournaments. <br>
+                It has an eclectic downtown with many surf<br>
+                shops, coffeehouses and record stores. It <br>
+                has always been a sure draw for the unique<br>
+                surf and hippie crowds. 
             </p>
+ 
         </div>
-        <!-- </div> -->
 
         <section class="weather">
             <div class="weatherdiv">
@@ -164,6 +168,7 @@
         <button class="freshbutton" onclick="window.location.href='fresh.html';">
       Make now!
     </button>
+    <p>You have ordered:   Smoothies.</p>
 </div>
     </main>
     <footer class="footer">

@@ -1,16 +1,27 @@
 @media only screen and (min-width: 36em) {
 
- .index, .fresh{
+ /* .index,*/
+  .fresh, .index{ 
   display: grid;
-  grid-template-columns: 1fr 1fr;
 } 
+.headerh1 {
+ left: 23%;
+}
 .about {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+.vegcontainer,
+.fruitcontainer, .cabcontainer {
+  margin: 7px;
+  padding: .7rem;
+}
 .vegcontainer {
   grid-column: 1/2;
+}
+.vegimg, .vegp {
+ margin-left: 0;
 }
 .cabcontainer {
   grid-column: 2/3
@@ -18,7 +29,10 @@
 .weather {
   grid-column: 1/2;
   grid-row: 2/3;
-
+}
+.smoothie {
+  margin-left: 0;
+  margin-right: 5px;
 }
   nav ul li a {
     border: none;
@@ -29,5 +43,8 @@
   .forecastcontainer {
     display: none;
   }
+  .fruith2, .vegh2, .cabh2 {
+   max-width: 90.5%;
+}
 
 }

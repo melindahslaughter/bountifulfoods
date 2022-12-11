@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Melinda Slaughter">
+    <meta name="description"
+        content="site for fictitional company Bountiful Foods. Created as a final project for WDD230 BYUI">
+    <title>Bountiful Foods</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+</head>
+
+<body class="indexbody">
+    <header>
+        <div class="headercontainer">
+              <picture>
+        <source srcset="images/smoothie500.jpg" media="(max-width: 500px)">
+        <source srcset="images/smoothie800.jpg" media="(max-width: 800px)">
+        <img class="mainimg" src="images/smoothie1200.jpg" alt="Image of smoothies" sizes="(min-width: 48em) 800px,100vw"><!--chech this-->
+      </picture>
+       
+            
+            <h1 class="headerh1">Bountiful Foods</h1>
+        </div>
+        <div class="navcontainer">
+        <nav>
+            <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+            <ul id="primaryNav"> 
+                <li><a class="current" href="index.html">Home</a></li>
+                <li><a href="fresh.html">Fresh</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+        </nav>
+        </div>
+
+        <div class="date"></div>
+    </header>
+    <main>
+        <p>
+           Header photo 
+           ID 59225596
+           © BoardingPhoto <a href="https://www.dreamstime.com/stock-photo-smoothie-fruit-juice-smoothies-drinks-fruits-row-isola-isolated-white-background-image59225596">59225596</a>     /
+               <a href="https://www.dreamstime.com/photos-images/smoothie.html">Smoothie</a>    
+                ©     <a href="https://www.dreamstime.com/boarding1now_info">Boarding1now</a> |
+                 <a href="https://www.dreamstime.com/">Dreamstime.com</a>1now | Dreamstime.com    
+        </p>
+        <br>
+        <p>
+            Purple cabbage
+         <a href="https://www.dreamstime.com/colorful-produce-close-up-including-purple-cabbage-cauliflower-potato-broccoli-leafy-greens-free-stock-photography-image-free-86184097">86184097</a> 
+         © <a href="https://www.dreamstime.com/creativecommonsstockphotos_info">creativecommonsstockphotos</a> |
+          <a href="https://www.dreamstime.com/stock-photos">Dreamstime.com</a>
+        </p>
+        <p>
+            San Diego
+        Free photo <a href="https://www.dreamstime.com/slices-fruit-stock-photo-image-free-22004450">22004450</a> 
+        © <a href="https://www.dreamstime.com/photoiris2021_info" itemprop="author">Gordan Jankulov</a>
+         - <a href="https://www.dreamstime.com/">Dreamstime.com</a>
+       </p>
+       <br>
+       <p>
+        San clemente
+        Free photo <a href="https://www.dreamstime.com/fresh-vegetable-variety-stock-images-image-free-7891744">7891744</a>
+         © <a href="https://www.dreamstime.com/paha_l_info" itemprop="author">Pavel Losevsky</a> - 
+         <a href="https://www.dreamstime.com/">Dreamstime.com</a>
+
+       </p>
+    </main>
+        <footer class="footer">
+        <div class="media">
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="images/facebook.png" alt="facebook logo" width="30">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="images/instagram.png" alt="instagram logo" width="30">
+            </a>
+            <a href="https://twitter.com/?lang=en" target="_blank">
+                <img src="images/twitter.png" alt="twitter logo" width="30">
+            </a>
+            <a href="https://www.tiktok.com/en/" target="_blank">
+                <img src="images/tiktok.png" alt="tiktok logo" width="30">
+            </a>
+        </div>
+       <div class="contactfooter">
+        <p><strong>Contact Information</strong></p>
+         <p>2030 Culiver Street</p>
+            <p>Carlsbad California, 92008</p>
+            <p>bountifulfoods@gmail.com</p>
+            <p>555-867-5309</p>
+             </div>
+             <div>
+        <span id="lastModified"></span><br>
+         <span>Weather data provided by: <a class="weath" href="https://openweathermap.org/">OpenWeatherMap.org</a></span>
+       </div>
+    </footer>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/images.js"></script>
+    <script src="scripts/weather.js"></script>
+    
+</body>
+
+</html>
