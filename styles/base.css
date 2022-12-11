@@ -17,6 +17,9 @@ body {
   bottom: 5px;
   left: 6%;
 }
+/* .mainimg {
+  width: 100%;
+} */
 
 /* Navigation style */
 nav button {
@@ -254,6 +257,8 @@ textarea {
 .orderinfo {
   margin-bottom: 37px;
   margin-top: 45px;
+  max-width: 90%;
+  margin-left: 9px;
 }
  /* fresh page style */
  .about {
