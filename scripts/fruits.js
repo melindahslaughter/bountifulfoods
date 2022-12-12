@@ -35,3 +35,5 @@ function showFruit1() {
   output = selectElement.value;
   document.querySelector('.carbs').textContent = output;
 }
+
+// window.localStorage.setItem("numOrdered", smoothieOrder);  try this 

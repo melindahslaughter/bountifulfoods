@@ -98,16 +98,18 @@ nav ul.open {
 .index, .fresh, .about {
   display: grid;
   column-gap: 1em;
-  max-width: 100vw;
- 
+  /* max-width: 100vw; */
+  max-width: 100%;
 } 
+.abouth1 {
+  margin-left: 5%;
+}
 
 /*info container style*/
 .vegcontainer,
 .fruitcontainer, .cabcontainer {
   border:solid 2px rgb(255,221,69);
   max-width: 100%;   
-  
   margin: 10px;
   padding: .5rem;
 }
@@ -262,22 +264,20 @@ textarea {
   max-width: 90%;
   margin-left: 9px;
 }
- /* fresh page style */
+ /* about page style */
  .about {
   display: grid;
-  grid-template-columns: 1fr;
   grid-gap: 1rem; 
  }
 
  .abouth2 {
   text-align: center;
  }
- .historicalinfo {
+ .historicalinfo {  
   border: solid 2px rgb(18,130,83);
-  margin-left: 1.5rem;
+  margin-left: 1rem;
   margin-top: .5rem;
   padding: .8rem;
-  align-content: center;
   width: 80%; 
  }
  .historyp {
@@ -285,13 +285,26 @@ textarea {
  }
  .contactinfo {
   border: solid 2px rgb(18,130,83);
-  margin-left: 2rem;
-  padding: 1rem;
+  margin-left: 13%;
+  padding: 1.5rem;
   width: 60%;
   text-align: center;
 }
+.aboutthanks {
+   border: solid 2px rgb(18,130,83);
+   line-height: 2rem;
+   text-align:center;
+   margin: .5rem;
+   width: 64%;
+   height: 102%;
+   margin-left: 17%;
+}
 .map {
   margin-top: 7px;
-  margin-left: 25px;
-  width: 60%;
+  width: 60%;  
+}
+iframe {
+  width: 100%;
+   margin-left: 35%;
+   height: 100%;
 } 
