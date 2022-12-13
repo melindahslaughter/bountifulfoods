@@ -15,13 +15,6 @@ function processTheFruit(fruitArray) {
   fruitList = fruitArray;
   fruitArray.forEach(fruit => {
  
-    // let fruitName = fruit.name;
-    // let carbs = fruit.nutritions.carbohydrates;
-    // let protein = fruit.nutritions.protein;
-    // let fat = fruit.nutritions.carbohydrates;
-    // let sugar = fruit.nutritions.fat;
-    // let calories = fruit.nutritions.calories;
-
     //populate dropdowns
     let select = document.getElementsByTagName('select')
     for (select of select) {
@@ -29,8 +22,8 @@ function processTheFruit(fruitArray) {
         let option = document.createElement('OPTION');
         let txt = document.createTextNode(fruit.name);
         option.value = fruit.id;
+        
         option.appendChild(txt)
-
         select.insertBefore(option, select.lastChild)
       }
     }
@@ -51,9 +44,7 @@ let result = document.querySelector("#fruitfirst");
 selection.addEventListener('change', () => {
   let id = selection.value;
   result.innerText = selection.options[selection.selectedIndex].text;
-  // console.log(id);
   fruit1 = getFruitById(id);
-  // console.log(fruit1);
   computeNutrition();
 
 });
@@ -63,9 +54,7 @@ let result2 = document.querySelector('#fruitsecond');
 selection2.addEventListener('change', () => {
   let id = selection2.value;
   result2.innerText = selection2.options[selection2.selectedIndex].text;
-  // console.log(id);
   fruit2 = getFruitById(id);
-  // console.log(fruit2);
   computeNutrition();
 });
 
@@ -75,9 +64,7 @@ let result3 = document.querySelector('#fruitthird');
 selection3.addEventListener('change', () => {
   let id = selection3.value;
   result3.innerText = selection3.options[selection3.selectedIndex].text;
-  // console.log(id);
   fruit3 = getFruitById(id);
-  // console.log(fruit3);
   computeNutrition();
 });
 
@@ -139,4 +126,3 @@ function orderCounter() {
 
 
 
-// window.localStorage.setItem("numOrdered", smoothieOrder);  try this 

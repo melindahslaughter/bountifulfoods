@@ -1,4 +1,4 @@
- @media only screen and (min-width: 801px) { /*was 64rem */
+ @media only screen and (min-width: 801px) { 
  
  /*Navigation style */
     nav button {
@@ -52,7 +52,6 @@
     margin-bottom: 15px;
     margin-left: 20px;
     margin-right: 15px;
-
 }
  .about {
   display: grid;

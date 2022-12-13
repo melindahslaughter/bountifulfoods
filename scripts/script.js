@@ -24,7 +24,6 @@ datefield.innerHTML = `<em>${fulldate}</em>`;
 function toggleMenu() {
     document.getElementById('primaryNav').classList.toggle("open");  //toggles hamburger button according to page size.
     document.getElementById("hamburgerBtn").classList.toggle("open");
-
 }
 
 const x = document.getElementById('hamburgerBtn')
