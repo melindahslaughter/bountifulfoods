@@ -53,25 +53,25 @@
                 <label class="top">Phone* <input type="tel" name="phone" required id="userPhone"></label>
                 <input type="submit" value="Enter Information" class="submitBtn" onclick="showInput(); return false">
 
-               
-                    Fruits: <select name="select1" id="fruit1">
-                        <option value="default">Select Fruit</option>
-                    </select>
-                    <br><br>
-                    Fruits: <select name="select2" id="fruit2">
-                        <option value="default">Select Fruit</option>
-                    </select>
-                    <br><br>
-                    Fruits: <select name="select3" id="fruit3">
-                        <option value="default">Select Fruit</option>
-                    </select>
-                    <label class="top">Special Instructions
-                        <textarea id="instructions" name="instructions" rows="4" cols="51"></textarea>
-                    </label>
-                    <input type="button" id="txt" value="Order your smoothie" onclick="getText(); orderCounter();">
-                </fieldset>
-            </form>
-    
+                <br><br>
+                Fruits: <select name="select1" id="fruit1">
+                    <option value="default">Select Fruit</option>
+                </select>
+                <br><br>
+                Fruits: <select name="select2" id="fruit2">
+                    <option value="default">Select Fruit</option>
+                </select>
+                <br><br>
+                Fruits: <select name="select3" id="fruit3">
+                    <option value="default">Select Fruit</option>
+                </select>
+                <label class="top">Special Instructions
+                    <textarea id="instructions" name="instructions" rows="4" cols="51"></textarea>
+                </label>
+                <input type="button" id="txt" value="Order your smoothie" onclick="getText(); orderCounter();">
+            </fieldset>
+        </form>
+
         <div class="orderinfo">
             <h2 class="infoh2">Congratulations!</h2>
             <p><strong>Name:</strong> <span id="display"></span></p>
@@ -109,4 +109,5 @@
     <script src="scripts/fruits.js"></script>
 
 </body>
+
 </html>

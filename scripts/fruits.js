@@ -127,6 +127,14 @@ function displayNutrition() {
   document.getElementById('calories').innerHTML = combinedNutrition.calories.toFixed(2);
   
 }
+function orderCounter() {
+  if (typeof (Storage) !== "undefined") {
+    localStorage.orderCount = Number(localStorage.orderCount) + 1;
+  } else {
+    localStorage.orderCount = 1;
+  }
+  document.getElementById('smoothiesord').innerHTML = `<strong>Total Number of Smoothies Ordered:</strong> ${localStorage.orderCount}`;
+}
 
 
 
