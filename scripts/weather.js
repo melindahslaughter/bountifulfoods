@@ -10,7 +10,7 @@ async function api1Fetch() {
         const response = await fetch("https://api.openweathermap.org/data/2.5/weather?lat=33.1581&lon=-117.3506&appid=364ee35cfabcb4fec9d4af380e8686be&units=imperial");
         if (response.ok) {
             const data = await response.json();
-            console.log(data)
+            // console.log(data)
             displayForecast(data);
         } else {
             throw Error(await response.text());
@@ -61,7 +61,7 @@ async function apiFetch() {
         const response = await fetch("https://api.openweathermap.org/data/2.5/forecast?lat=33.1581&lon=-117.3506&appid=364ee35cfabcb4fec9d4af380e8686be&units=imperial");
         if (response.ok) {
             const data = await response.json();
-            console.log(data)
+            // console.log(data)
             displayResults(data);
         } else {
             throw Error(await response.text());

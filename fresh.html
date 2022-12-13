@@ -20,11 +20,11 @@
 <body class="freshbody">
     <header>
         <div class="headercontainer">
-                    <picture>
-        <source srcset="images/smoothie500.jpg" media="(max-width: 500px)">
-        <source srcset="images/smoothie800.jpg" media="(max-width: 800px)">
-        <img class="mainimg" src="images/smoothie1200.jpg" alt="Image of smoothies" sizes="100vw">
-      </picture>
+            <picture>
+                <source srcset="images/smoothie500.jpg" media="(max-width: 500px)">
+                <source srcset="images/smoothie800.jpg" media="(max-width: 800px)">
+                <img class="mainimg" src="images/smoothie1200.jpg" alt="Image of smoothies">
+            </picture>
             <h1 class="headerh1">Bountiful Foods</h1>
         </div>
 
@@ -43,39 +43,38 @@
 
     </header>
     <main class="fresh">
-        <form method="get" action="">
+        <form method="get" action="#">
             <fieldset>
                 <legend>Personal Information</legend>
-                <label class="top">First Name* <input class="top" type="text" name="fname" required id="userName"></label>
-                <label class="top">Email* <input type="email" placeholder="someone@gmail.com" required id="userEmail"></label>
+                <label class="top">First Name* <input class="top" type="text" name="fname" required
+                        id="userName"></label>
+                <label class="top">Email* <input type="email" placeholder="someone@gmail.com" required
+                        id="userEmail"></label>
                 <label class="top">Phone* <input type="tel" name="phone" required id="userPhone"></label>
                 <input type="submit" value="Enter Information" class="submitBtn" onclick="showInput(); return false">
-            
-        </form>
-        <div class="crazymaker">
-           
-            <form name="form1" id="fruit11" >
-                Fruits: <select name="select1" id="fruit1">
-                    <option value="default">Select Fruit</option>
-                </select>
-               <br><br>
-                Fruits: <select name="select2" id="fruit2">
-                    <option value="default">Select Fruit</option>
-                </select>
-                <br><br>
-                Fruits: <select name="select3" id="fruit3">
-                    <option value="default">Select Fruit</option>
-                </select>
-                <label class="top">Special Instructions
-                <textarea id="instructions" name="instructions" rows="4" cols="51"></textarea>
-                </label>
-                <input type="button" id="txt" value="Order your smoothie" onclick = "getText(); orderCounter();" >
-              </fieldset>
+
+               
+                    Fruits: <select name="select1" id="fruit1">
+                        <option value="default">Select Fruit</option>
+                    </select>
+                    <br><br>
+                    Fruits: <select name="select2" id="fruit2">
+                        <option value="default">Select Fruit</option>
+                    </select>
+                    <br><br>
+                    Fruits: <select name="select3" id="fruit3">
+                        <option value="default">Select Fruit</option>
+                    </select>
+                    <label class="top">Special Instructions
+                        <textarea id="instructions" name="instructions" rows="4" cols="51"></textarea>
+                    </label>
+                    <input type="button" id="txt" value="Order your smoothie" onclick="getText(); orderCounter();">
+                </fieldset>
             </form>
-        </div>
+    
         <div class="orderinfo">
             <h2 class="infoh2">Congratulations!</h2>
-            <p><strong>Name:</strong></Name:> <span id="display"></span></p>
+            <p><strong>Name:</strong> <span id="display"></span></p>
             <p><strong>Email:</strong> <span id="display2"></span></p>
             <p><strong>Phone:</strong> <span id="display3"></span></p>
             <p><strong>Date Ordered:</strong> <span id="date2"></span></p>
@@ -92,28 +91,22 @@
             <p id="smoothiesord"> </p>
         </div>
 
-    
     </main>
-     <footer class="footer">
+    <footer class="footer">
         <div class="media">
             <a href="https://www.facebook.com/" target="_blank">
                 <img src="images/facebook.png" alt="facebook logo" width="30"></a>
-            </a>
             <a href="https://www.instagram.com/" target="_blank">
-                <img src="images/instagram.png" alt="instagram logo" width="30">
-            </a>
+                <img src="images/instagram.png" alt="instagram logo" width="30"></a>
             <a href="https://twitter.com/?lang=en" target="_blank">
                 <img src="images/twitter.png" alt="twitter logo" width="30"></a>
             <a href="https://www.tiktok.com/en/" target="_blank">
-                <img src="images/tiktok.png" alt="tiktok logo" width="30">
-            </a>
+                <img src="images/tiktok.png" alt="tiktok logo" width="30"></a>
         </div>
         <span id="lastModified"></span>
-
     </footer>
     <script src="scripts/script.js"></script>
     <script src="scripts/fruits.js"></script>
-   
-</body>
 
+</body>
 </html>

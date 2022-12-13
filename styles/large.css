@@ -31,7 +31,7 @@
   .vegcontainer,
 .fruitcontainer, .cabcontainer{
   border:solid 2px rgb(255,221,69);  
-  max-width:auto;  
+  width:auto;  
 
 }
   .fruith2, .vegh2, .cabh2 {
