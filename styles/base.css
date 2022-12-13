@@ -256,7 +256,12 @@ textarea {
 
 }
 .submitBtn {
-  margin-top: 7px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+#txt {
+  margin-top: 15px;
+  margin-bottom: 37px;
 }
 .orderinfo {
   margin-bottom: 37px;
@@ -308,3 +313,6 @@ iframe {
    margin-left: 35%;
    height: 100%;
 } 
+.resource {
+  margin-left: 35px;
+}

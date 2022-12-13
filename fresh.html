@@ -8,7 +8,7 @@
     <meta name="author" content="Melinda Slaughter">
     <meta name="description"
         content="site for fictitional company Bountiful Foods. Created as a final project for WDD230 BYUI">
-   <link rel="shortcut icon" href="favicon.jpg">
+    <link rel="shortcut icon" href="favicon.jpg">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
@@ -49,42 +49,47 @@
                 <label class="top">First Name* <input class="top" type="text" name="fname" required id="userName"></label>
                 <label class="top">Email* <input type="email" placeholder="someone@gmail.com" required id="userEmail"></label>
                 <label class="top">Phone* <input type="tel" name="phone" required id="userPhone"></label>
-                 <input type="submit" value="Enter Information" class="submitBtn" onclick="showInput(); return false">
+                <input type="submit" value="Enter Information" class="submitBtn" onclick="showInput(); return false">
             
         </form>
         <div class="crazymaker">
-            <form name="form1" id="fruit1" action="">
-                Fruits: <select name="select" id="fruit1">
+           
+            <form name="form1" id="fruit11" >
+                Fruits: <select name="select1" id="fruit1">
                     <option value="default">Select Fruit</option>
                 </select>
-                 <br><br>
-                Fruits: <select name="select" id="fruit2">
+               <br><br>
+                Fruits: <select name="select2" id="fruit2">
                     <option value="default">Select Fruit</option>
                 </select>
-                <!-- <input type="submit" value="Place Order" class="submitBtn" onclick="showFruit1(); return false"> -->
                 <br><br>
-                Fruits: <select name="select" id="fruit3">
+                Fruits: <select name="select3" id="fruit3">
                     <option value="default">Select Fruit</option>
                 </select>
                 <label class="top">Special Instructions
-                <textarea class="comments" name="comments" rows="4" cols="51"></textarea>
+                <textarea id="instructions" name="instructions" rows="4" cols="51"></textarea>
                 </label>
-                <!-- <input type="submit" value="Place Order" class="submitBtn" onchange="showFruit(this); return false"> -->
+                <input type="button" id="txt" value="Order your smoothie" onclick = "getText(); orderCounter();" >
               </fieldset>
             </form>
         </div>
         <div class="orderinfo">
             <h2 class="infoh2">Congratulations!</h2>
-             <p id="display"></p>
-             <p id="display2"></p>
-             <p id="display3"></p>
-            <h3>You have ordered a delicious smoothie</h3>
-            <p id="fruit1">Total carbohydrates: </p>
-            <p class="protein">Total Protein: </p>
-            <p class="fat">Total Fat: </p>
-            <p class="sugar">Total Sugar: </p>
-            <p class="calories">Total Calories</p>
-            <p class="smoothiesord">Total Number of Smoothies Ordered: </p>
+            <p><strong>Name:</strong></Name:> <span id="display"></span></p>
+            <p><strong>Email:</strong> <span id="display2"></span></p>
+            <p><strong>Phone:</strong> <span id="display3"></span></p>
+            <p><strong>Date Ordered:</strong> <span id="date2"></span></p>
+            <p><strong>Your first fruit choice is:</strong> <span id="fruitfirst"></span></p>
+            <p><strong>Your second fruit choice is:</strong> <span id="fruitsecond"></span></p>
+            <p><strong>Your third fruit choice is:</strong> <span id="fruitthird"></span></p>
+            <p><strong> Your instructions are: </strong> <span id="display_instructions"></span></p>
+            <h3>You have ordered a delicious smoothie!</h3>
+            <p><strong>Total carbohydrates:</strong> <span id="carbs"></span></p>
+            <p><strong>Total protein:</strong> <span id="protein"></span></p>
+            <p><strong>Total fat: </strong><span id="fat"></span></p>
+            <p><strong>Total sugar:</strong> <span id="sugar"></span></p>
+            <p><strong>Total calories:</strong> <span id="calories"></span></p>
+            <p id="smoothiesord"> </p>
         </div>
 
     
@@ -108,6 +113,7 @@
     </footer>
     <script src="scripts/script.js"></script>
     <script src="scripts/fruits.js"></script>
+   
 </body>
 
 </html>
